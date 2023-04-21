@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestHistoryActivity">
+
+    <LinearLayout
+        android:id="@+id/TH_LL_V"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/TH_LL_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_orange"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back_button_history"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/background_orange"
+                app:srcCompat="@drawable/arrow_back_image" />
+
+            <TextView
+                android:id="@+id/TH_title"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/test_history_title"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TH_LL_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_char"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Character" />
+
+            <Button
+                android:id="@+id/btn_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Word" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/typing_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Typing_test_app"
+        tools:targetApi="31">
+        <activity
+            android:name=".CharHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WordHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AchievementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WordTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CharacterTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecordDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

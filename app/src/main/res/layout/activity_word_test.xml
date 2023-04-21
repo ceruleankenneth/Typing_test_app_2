@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WordTestActivity">
+
+    <LinearLayout
+        android:id="@+id/WT_LL_V"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/WT_LL_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_orange"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back_button_word_test"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/background_orange"
+                app:srcCompat="@drawable/arrow_back_image" />
+
+            <TextView
+                android:id="@+id/WT_title"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/word_test_title"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/difficultytext"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="nightmare"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/difficultySpinner"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/WT_LL_hint"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bottom_singleline_3dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/correct_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/background_gray"
+                    android:gravity="center"
+                    android:text="@string/correct_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/WT_correct_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/wrong_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/background_gray"
+                    android:gravity="center"
+                    android:text="@string/wrong_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/WT_wrong_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/Red"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/accuracy_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/background_gray"
+                    android:gravity="center"
+                    android:text="@string/accuracy_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/WT_accuracy_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/speed_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/background_gray"
+                    android:gravity="center"
+                    android:text="@string/speed_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/WT_speed_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/background_gray"
+                    android:gravity="center"
+                    android:text="@string/time_text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/WT_time_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/space_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="* Press space to bring a new word"
+            android:textColor="#FF0000"/>
+
+        <TextView
+            android:id="@+id/word_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/word_type_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Type"
+            android:inputType="textPersonName"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/WT_original_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Original Paragraph"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/WT_original_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:hint="Original Paragraph"
+            android:maxLines="4"
+            android:scrollbars="vertical"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/WT_typed_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="Typed Paragraph"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/WT_typed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:hint="Typed Paragraph"
+            android:maxLines="4"
+            android:scrollbars="vertical"
+            android:text="" />
+
+    </LinearLayout>
+
+</RelativeLayout>

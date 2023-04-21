@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreenActivity">
+
+    <LinearLayout
+        android:id="@+id/MS_LL_V"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/MS_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_orange"
+            android:padding="7dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:id="@+id/MS_LL_Container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp">
+
+            <LinearLayout
+                android:id="@+id/MS_LL_V_Text_Score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/MS_LL_H_textlabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/TV_test_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="95dp"
+                        android:layout_marginRight="95dp"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Test &amp; Score Board"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/MS_LL_H_Container_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+
+                    <Button
+                        android:id="@+id/test_char_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/right_singleline"
+                        android:drawableTop="@drawable/keyboard_image"
+                        android:text="Take\nA Test\n(char)"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/test_word_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/right_singleline"
+                        android:drawableTop="@drawable/keyboard_image"
+                        android:text="Take\nA Test\n(word)"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/history_button"
+                        android:layout_width="90dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@drawable/right_singleline"
+                        android:drawableTop="@drawable/hisory_image"
+                        android:text="Test\nHistory"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/achievement_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/achievement_image"
+                        android:text="Achiev\nement"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MS_LL_V_other"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/MS_LL_H_otherLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginRight="150dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_corner"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="Other"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/MS_LL_H_Container_other"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/profile_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/right_singleline"
+                        android:backgroundTint="@null"
+                        android:drawableTop="@drawable/profile_image"
+                        android:paddingTop="20dp"
+                        android:text="Profile" />
+
+                    <Button
+                        android:id="@+id/credit_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:drawableTop="@drawable/aboutus_image"
+                        android:paddingTop="20dp"
+                        android:text="About us" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

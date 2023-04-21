@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".AchievementActivity">
+
+    <LinearLayout
+        android:id="@+id/A_LL_V"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gray"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/A_LL_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_orange"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back_button_achievement"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/background_orange"
+                app:srcCompat="@drawable/arrow_back_image" />
+
+            <TextView
+                android:id="@+id/P_title"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/achievement_title"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ach_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="1.Typing 5 character/word correctly in a game"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/unlock_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/tick_image" />
+
+            <TextView
+                android:id="@+id/ach_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="2.Typing 30 character/word correctly in a game"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/unlock_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/tick_image" />
+
+            <TextView
+                android:id="@+id/ach_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="3.Typing 60 character/word correctly in a game"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/unlock_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/tick_image" />
+
+            <TextView
+                android:id="@+id/ach_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="4.No wrong character/word typing in a game"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/unlock_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/tick_image" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

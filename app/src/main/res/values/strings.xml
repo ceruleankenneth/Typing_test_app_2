@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Typing Speed Test</string>
+    <string name="profile_title">Profile</string>
+    <string name="test_history_title">Test History</string>
+    <string name="record_details_title">Record Details</string>
+    <string name="character_test_title">Character Test</string>
+    <string name="word_test_title">Word Test</string>
+    <string name="achievement_title">Achievement</string>
+    <string name="about_us_title">About us</string>
+    <string name="correct_text">Correct</string>
+    <string name="wrong_text">Wrong</string>
+    <string name="accuracy_text">Accuracy</string>
+    <string name="speed_text">Speed</string>
+    <string name="time_text">Time</string>
+    <string name="developers">Developed by:\nLee Yu Kan 21104350A\nLung Wing Lap 21106121A\nNg Chun Pong 21087279A\nNg Ka Yu 21011377A\nTham Cheuk Nam 21103862A</string>
+</resources>
